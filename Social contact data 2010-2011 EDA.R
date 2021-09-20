@@ -210,7 +210,7 @@ contact_part_m_m <- contact_part %>%
 ggplot(contact_part_m_m, aes(part_agec, cnt_agec)) + 
   geom_tile(aes(fill = n)) + 
   labs(fill = "# of contacts", x = "age of respondent", y = "age of contacts") +
-  scale_fill_gradient(low="white", high="red") +
+  scale_fill_gradient(low="white", high="red", limits = c(0,500))+
   theme_ipsum() + theme_bw() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))
@@ -228,7 +228,7 @@ contact_part_f_m <- contact_part %>%
 ggplot(contact_part_f_m, aes(part_agec, cnt_agec)) + 
   geom_tile(aes(fill = n)) + 
   labs(fill = "# of contacts", x = "age of respondent", y = "age of contacts") +
-  scale_fill_gradient(low="white", high="red") +
+  scale_fill_gradient(low="white", high="red", limits = c(0,500)) +
   theme_ipsum() + theme_bw() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))
@@ -245,7 +245,7 @@ contact_part_m_f <- contact_part %>%
 ggplot(contact_part_m_f, aes(part_agec, cnt_agec)) + 
   geom_tile(aes(fill = n)) + 
   labs(fill = "# of contacts", x = "age of respondent", y = "age of contacts") +
-  scale_fill_gradient(low="white", high="red") +
+  scale_fill_gradient(low="white", high="red", limits = c(0,500)) +
   theme_ipsum() + theme_bw() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))
@@ -262,7 +262,7 @@ contact_part_f_f <- contact_part %>%
 ggplot(contact_part_f_f, aes(part_agec, cnt_agec)) + 
   geom_tile(aes(fill = n)) + 
   labs(fill = "# of contacts", x = "age of respondent", y = "age of contacts") +
-  scale_fill_gradient(low="white", high="red") +
+  scale_fill_gradient(low="white", high="red", limits = c(0,500)) +
   theme_ipsum() + theme_bw() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))
@@ -295,7 +295,7 @@ contact_s_part_wd <- contact_s_part %>%
 ggplot(contact_s_part_wd, aes(part_agec, cnt_agec)) + 
   geom_tile(aes(fill = n)) + 
   labs(fill = "# of contacts", x = "age of respondent", y = "age of contacts") +
-  scale_fill_gradient(low="white", high="red") +
+  scale_fill_gradient(low="white", high="red", limits = c(0,1000)) +
   theme_ipsum() + theme_bw() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))    
@@ -309,7 +309,7 @@ contact_s_part_we <- contact_s_part %>%
 ggplot(contact_s_part_we, aes(part_agec, cnt_agec)) + 
   geom_tile(aes(fill = n)) + 
   labs(fill = "# of contacts", x = "age of respondent", y = "age of contacts") +
-  scale_fill_gradient(low="white", high="red") +
+  scale_fill_gradient(low="white", high="red", limits = c(0,1000)) +
   theme_ipsum() + theme_bw() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))
@@ -323,7 +323,7 @@ contact_s_part_hwd <- contact_s_part %>%
 ggplot(contact_s_part_hwd, aes(part_agec, cnt_agec)) + 
   geom_tile(aes(fill = n)) + 
   labs(fill = "# of contacts", x = "age of respondent", y = "age of contacts") +
-  scale_fill_gradient(low="white", high="red") +
+  scale_fill_gradient(low="white", high="red", limits = c(0,1000)) +
   theme_ipsum() + theme_bw() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) 
